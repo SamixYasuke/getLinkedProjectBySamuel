@@ -1,0 +1,162 @@
+.timelineSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #150E28; 
+    flex-direction: column;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 70px;
+    gap: calc(20%);
+}
+
+.timelineText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: calc(340px);
+    margin-top: 40px;
+}
+
+.timelineText h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.timelineText p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.item1 div{
+    margin-top: 70px;
+}
+
+.item3 div{
+    margin-top: 70px;
+}
+
+.item1 div h2{
+    color: #903AFF;
+    text-align: end;
+}
+
+.item1 div p{
+    color: #ffffff;
+    text-align: end;
+}
+
+.item3 div h2{
+    color: #903AFF;
+    text-align: start;
+}
+
+.item3 div p{
+    color: rgb(255, 255, 255);
+    text-align: start;
+}
+
+.item2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vLine {
+    display: inline-block;
+    width: 2px;
+    height: 90px;
+    border-left: 3px solid #903AFF;
+    margin: 0 5px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerMobile{
+    display: none;
+}
+
+.hr{
+    height: 1px;
+    background-color: rgb(141, 141, 141);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container{
+        display: none;
+    }
+
+    .timelineText{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: calc(260px);
+    }
+
+    .containerMobile{
+        display: block;
+        padding: 10px 10px;
+    }
+
+    .items{
+        display: flex;
+        gap: calc(3%);
+    }
+
+    .vLineMobile{
+        display: inline-block;
+        width: 2px;
+        height: 90px;
+        border-left: 3px solid #903AFF;
+        margin: 0 5px;
+    }
+    
+    .circleMobile{
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .items div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .items div:nth-child(2){
+        color: rgb(255, 255, 255);
+    }
+
+    .items div:nth-child(2) h3{
+        color: #903AFF;
+    }
+
+}

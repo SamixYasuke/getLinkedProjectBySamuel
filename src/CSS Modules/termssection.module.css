@@ -1,0 +1,152 @@
+.termsSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #150E28; 
+    height: 100%;
+    box-sizing: border-box;
+    padding: 100px 4%;
+}
+
+.TextContainer{
+    color: rgb(255, 255, 255);
+    flex: 1;
+}
+
+.TextContainer1 h1{
+    width: 20%;
+    max-width: 280px;
+    min-width: 280px;
+}
+
+.TextContainer1 h1 span{
+    color: #D434FE;
+}
+
+.TextContainerParagraph1{
+    color: rgb(199, 197, 197);
+}
+
+.TextContainerParagraph2{
+    width: 38%;
+    max-width: 420px;
+    min-width: 420px;
+    margin: 40px 0;
+}
+
+.TextBorder{
+    border-style: solid;
+    border-color: #D434FE;
+    border-width: .2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 30px 60px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.TextBorder h4{
+    font-weight: lighter;
+}
+
+.TextBorder h3{
+    color: #D434FE;
+}
+
+.TextBorder h2{
+    font-size: large;
+}
+
+.TextBorder div{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 2%;
+}
+
+.TextBorder div h5{
+    font-weight: normal;
+}
+
+.TextBorder section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextBorder a{
+    background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 13px 34px;
+    border-radius: 5px;
+}
+
+.TextBorder a:hover{
+    background-image: none;
+    background-color: #150E28;
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+}
+
+.imageContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.image1{
+    position: absolute;
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.image2{
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.image2{
+    transform: translate(-50px, 100px);
+}
+
+@media screen and (max-width: 1000px) {
+    .termsSection{
+        flex-direction: column;
+        padding: 100px 4%;
+    }
+
+    .TextBorder{
+        padding: 30px 10px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .TextContainer1 h1{
+        width: 100%;
+        max-width: none;
+        min-width: 10px;
+        text-align: center;
+    }
+
+    .TextContainerParagraph1{
+        text-align: center;
+    }
+
+    .TextContainerParagraph2{
+        width: 100%;
+        max-width: none;
+        min-width: 10px;
+        margin: 40px 0;
+        text-align: center;
+    }
+}

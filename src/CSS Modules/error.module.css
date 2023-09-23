@@ -1,0 +1,79 @@
+.article {
+    border-style: solid;
+    border-color: #903AFF;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popImg1{
+    width: 40%;
+}
+
+.article h2{
+    width: 80%;
+    text-align: center;
+}
+
+.article p{
+    width: 45%;
+    text-align: center;
+}
+
+.article > Button{
+    color: white;
+    text-decoration: none;
+    padding: 12px 45px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out;
+    width: 70%;
+    text-align: center;
+}
+
+.article > Button:hover {
+    background-image: none;
+    background-color: #150E28;
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    padding: 12px 50px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .article {
+        width: 100%;
+        height: 100%;
+    }
+}

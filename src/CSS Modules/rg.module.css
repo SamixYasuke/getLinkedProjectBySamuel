@@ -1,0 +1,99 @@
+.rulesSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #150E28; 
+    height: 100vh;
+}
+
+.rulesSection::before,
+.rulesSection::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Adjust as needed */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.rulesSection::before {
+    background-image: url("../images/Purple-Lens-Flare-PNG (1).png");
+    background-position: top right;
+    left: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 100px;
+    gap: calc(10%);
+}
+
+.container > div h2{
+    color: rgb(255, 255, 255);
+    text-align: start;
+    font-size: 4ex;
+    width: 200px;
+}
+
+.container > div span{
+    color: #D434FE;
+}
+
+.container > div p{
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    text-align: start;
+    width: 470px;
+}
+
+.container img{
+    width: calc(40% + 5em);
+    height: calc(40% + 5em);
+    object-fit: contain;
+    max-height: calc(45% + 5em);
+    max-width: calc(45% + 5em);
+}
+
+.hr{
+    height: 1px;
+    background-color: rgb(141, 141, 141);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .rulesSection{
+        height: 100%;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        padding: 30px 40px;
+    }
+
+    .container img{
+        width: calc(70% + 5em);
+        height: calc(70% + 5em);
+        object-fit: contain;
+        max-height: calc(70% + 5em);
+        max-width: calc(70% + 5em);
+    }
+
+    .container > div h2{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 4ex;
+        width: 95%;
+    }
+
+    .container > div p{
+        text-align: center;
+        line-height: 25px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+}

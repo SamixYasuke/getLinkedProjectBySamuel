@@ -1,0 +1,109 @@
+footer{
+    background-color: #120b25;
+    color: rgb(255, 255, 255);
+    box-sizing: content-box;
+    padding: 60px 90px;
+}
+
+.footerContent{
+    display: grid;
+    grid-template-areas: 'a b c';
+    align-items: center;
+    gap: 10%;
+}
+
+.footerContent1 div{
+    display: flex;
+    justify-content:flex-start;
+    gap: 4%;
+    align-items: center;
+}
+
+.footerContent1 div > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footerContent1 div > a:hover{
+    color: #D434FE;
+}
+
+.footerText{
+    width: 450px;
+}
+
+.footerContent1 div p{
+    color: #D434FE;
+}
+
+.footerContent2 h3{
+    color: #D434FE;
+}
+
+.footerContent2 > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.footerContent2 > a:hover{
+    color: #D434FE;
+}
+
+.footerContent2 > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4%;
+}
+
+.footerContent2 > div p{
+    color: #D434FE;
+}
+
+.footerContent3 div{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    width: 150px;
+    text-align: start;
+}
+
+.rightText{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    footer{
+        background-color: #120b25;
+        color: rgb(255, 255, 255);
+        box-sizing: border-box;
+        padding: 60px 20px;
+    }
+
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .footerText{
+        width: auto;
+    }
+
+    .footerContent2 > div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6%;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .footerContent{
+        margin: 0 auto;
+        max-width: 2000px;
+    }
+}

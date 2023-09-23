@@ -1,0 +1,279 @@
+.HeroSection {
+    position: relative;
+    margin: 30px 20px;
+}
+
+.HeroSection::before,
+.HeroSection::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Adjust as needed */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.HeroSection::before {
+    background-image: url("../images/Purple-Lens-Flare-PNG (1).png");
+    background-position: top right;
+    left: 0;
+}
+
+
+
+
+.HeroSectionFirstText {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 60px;
+    position: relative;
+    
+}
+
+.HeroSectionFirstText > img {
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 16%;
+    min-width: 200px;
+    max-width: 260px;
+}
+
+.HeroSectionFirstText > h2 {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+
+.HeroSectionContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.HeroSectionContent1{
+    position: relative;
+}
+
+.HeroSectionContent1 .getLinkedImg1{
+    position: absolute;
+    top: 19%;
+    left: 68%;
+    width: 13%;
+}
+
+.HeroSectionContent1 .getLinkedImg2{
+    position: absolute;
+    top: 19%;
+    left: 82%;
+    width: 13%;
+}
+
+.HeroSectionContent1 .getLinkedImg3{
+    position: absolute;
+    top: -7%;
+    left: 57%;
+    width: 9%;
+}
+
+.HeroSectionContent1 > div h1{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    line-height: 25px;
+}
+
+.HeroSectionContent1 > div h1 span{
+    color: #D434FE;
+}
+
+.HeroSectionContent1 > p{
+    color: rgb(255, 255, 255);
+    width: 65%;
+}
+
+.HeroSectionContent1 > a{
+    background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    color: rgb(255, 255, 255);
+    padding: 12px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 30px 0;
+    display: inline-block;
+}
+
+.HeroSectionContent1 > a:hover{
+    background-image: none;
+    background-color: #150E28;
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    padding: 12px 50px;
+}
+
+.HeroSectionContent1 > h3{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.HeroSectionContent1 > h3 > span{
+    font-size: 15px;
+}
+
+.HeroSectionContent2 {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+}
+
+.HeroSectionContent2Img1 {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.HeroSectionContent2Img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+
+.hr{
+    height: 1px;
+    background-color: rgb(141, 141, 141);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .HeroSectionContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .HeroSectionFirstText {
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .HeroSectionFirstText > img {
+        position: absolute;
+        right: 24%;
+        top: 70%;
+        transform: translateY(-50%);
+        width: 13%;
+        min-width: 200px;
+        max-width: 260px;
+    }
+    
+    .HeroSectionFirstText > h2 {
+        color: rgb(255, 255, 255);
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .HeroSectionContent1 > div h1{
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .HeroSectionContent1 > p{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+    }
+
+    .HeroSectionContent1 .getLinkedImg1{
+        position: absolute;
+        top: 19%;
+        left: 80%;
+        width: 10%;
+    }
+    
+    .HeroSectionContent1 .getLinkedImg2{
+        position: absolute;
+        top: 19%;
+        left: 90%;
+        width: 10%;
+    }
+    
+    .HeroSectionContent1 .getLinkedImg3{
+        position: absolute;
+        top: -5%;
+        left: 68%;
+        width: 7%;
+    }
+
+    .HeroSectionContent1 > a {
+        display: block;
+        margin: 0 auto; 
+        background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+        color: rgb(255, 255, 255);
+        padding: 12px 50px;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+
+    .HeroSectionContent1 > h3{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .HeroSectionContent1 > div h1{
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .HeroSectionContent1 > p{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+    }
+
+    .HeroSectionContent2 {
+        position: relative;
+        width: 70%;
+        max-width:none;
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .HeroSectionContent1 > div h1{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .HeroSectionFirstText {
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+}

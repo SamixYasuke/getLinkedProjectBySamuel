@@ -1,0 +1,114 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #150E28;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.navImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContent{
+    display: flex;
+    gap: 10vw;
+}
+
+.navContent ul{
+    display: flex;
+    gap: 40px;
+    padding: 0 10px;
+}
+
+.navContent ul li{
+    list-style: none;
+}
+
+.navContent ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+.navContent ul li a:hover {
+    background: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navContent > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContent > div a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 45px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+  
+.navContent > div a:hover {
+    background-image: none;
+    background-color: #150E28;
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    padding: 12px 50px;
+}
+  
+
+.navContent > div a:focus{
+    padding: 11px 44px;
+}
+
+.navBtn{
+    display: none;
+}
+
+.hr{
+    height: 1px;
+    background-color: rgb(141, 141, 141);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .navContent{
+        display: none;
+    }
+
+    .navBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navBtn:hover{
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav{
+        background-color: #150E28;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+}

@@ -1,0 +1,89 @@
+@media screen and (min-width: 1001px) {
+    .navMobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navMobile {
+        background-color: #150E28; 
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -800px;
+        width: 100vw;
+        height: 100vh;
+        transition: left 1s ease-in-out;
+        z-index: 100;
+        overflow: hidden;
+    }
+    
+    .active {
+        left: 0;
+    }
+    
+    
+    .navMobile div{
+        padding: 20px 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .navMobile div img{
+        cursor: pointer;
+        border-style: solid;
+        border-color: #D434FE;
+        border-width: 1px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    
+    .navMobile ul{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .navMobile ul li{
+        list-style: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .navMobile ul li a{
+        color: white;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+    }
+    
+    .navMobile ul li a:hover {
+        background: linear-gradient(122deg, #D434FE 20%, #903AFF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .registerBtn{
+        color: white;
+        text-decoration: none;
+        padding: 12px 45px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+        transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+      
+    .registerBtn:hover{
+        background-image: none;
+        background-color: #150E28;
+        border-style: solid;
+        border-width: 1px;
+        border-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+        border-image-slice: 1;
+        border-image-repeat: stretch;
+        padding: 12px 50px;
+    }
+}
+

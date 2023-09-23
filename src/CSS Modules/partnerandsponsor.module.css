@@ -1,0 +1,96 @@
+.partnerAndSponsorSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #150E28; 
+    height: 100%;
+}
+
+.sponsorsImagesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 70px 10px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #D434FE;
+    border-radius: 4px;
+    margin: 64px 50px;
+}
+
+.partnerAndSponsorSectionTexts h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.partnerAndSponsorSectionTexts p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+  
+.sponsorsImagesContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px 10px;
+}
+  
+.sponsorsImagesContainer div:not(:nth-child(3n))::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 80%;
+    width: 3px;
+    background-color: #D434FE;
+}
+  
+.sponsorsImagesContainer div:not(:nth-child(-n+3))::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 8%;
+    width: 80%;
+    height: 3px;
+    background-color: #D434FE;
+}
+
+.sponsorsImagesContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hr{
+    height: 1px;
+    background-color: rgb(141, 141, 141);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+
+@media screen and (max-width: 700px) {
+    .sponsorsImagesContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 70px 10px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #D434FE;
+        border-radius: 4px;
+        margin: 64px 10px;
+    }
+
+    .sponsorsImagesContainer div:not(:nth-child(-n+3))::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 8%;
+        width: 80%;
+        height: 3px;
+        background-color: #D434FE;
+    }
+}

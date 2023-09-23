@@ -1,0 +1,186 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 30px 10%;
+}
+
+.responsiveImage {
+    max-width: 80%;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.main  > img{
+    flex: 1;
+}
+
+.main > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 30px 4%;
+}
+
+.main > div h3{
+    color: #D434FE;
+}
+
+.main > div img{
+    width: calc(45% + 20px);
+    max-width: 500px;
+}
+
+.main > div h2{
+    color: rgb(255, 255, 255);
+}
+
+.inputDiv{
+    display: grid;
+    grid-template-areas: 'a b';
+    gap: 10%;
+}
+
+.inputContainers{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainers label{
+    color: rgb(255, 255, 255);
+}
+
+.inputContainers input{
+    padding: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.inputContainers input::placeholder{
+    color: rgb(173, 173, 173);
+}
+
+.inputContainers select{
+    padding: 10px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    color: rgb(243, 243, 243);
+    background-color: #150E28; 
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+form p{
+    color: #D434FE;
+    font-style: italic;
+}
+
+.checkBoxContainer{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+.checkBoxContainer label{
+    color: rgb(255, 255, 255);
+}
+
+form button{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 12px 45px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: none;
+    background-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out, padding 0.4s ease-in-out;
+    margin-top: 30px;
+    
+}
+
+form button:hover{
+    background-image: none;
+    background-color: #150E28;
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(122deg, #D434FE 20%, #903AFF);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    cursor: pointer;
+}
+
+form button:disabled{
+    cursor: not-allowed;
+}
+
+.errorMessage {
+    color: #903AFF;
+    font-size: 14px;
+}
+  
+
+@media screen and (max-width: 950px) {
+    .responsiveImage {
+        max-width: 80%;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        box-sizing: content-box;
+        flex-direction: column;
+        margin: 30px 3%;
+    }
+    
+    .main > div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 2;
+        background-color: transparent;
+        box-shadow: none;
+        box-sizing: content-box;
+        padding: 30px 4%;
+    }
+
+    .inputDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .inputContainers input{
+        margin-bottom: 30px;
+    }
+
+    .inputContainers select{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .main > div img{
+        width: calc(60% + 20px);
+        max-width: 500px;
+    }
+}
