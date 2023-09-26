@@ -32,7 +32,7 @@ const Contact = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      data: JSON.stringify(data),
+      data: data,
     };
 
     setIsSubmitting(true); // Set submitting state to true
